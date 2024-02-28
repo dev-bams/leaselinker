@@ -15,14 +15,14 @@ function GetStartedForm() {
           <input
             type="text"
             name="firstName"
-            id="email"
+            id="firstName"
             className=" bg-light-purple grow min-h-11 rounded-md outline-none border-none pl-10"
             placeholder="First name"
           />{" "}
           <input
             type="text"
             name="lastName"
-            id="email"
+            id="lastName"
             className=" bg-light-purple grow min-h-11 rounded-md outline-none border-none pl-10"
             placeholder="Last name"
           />

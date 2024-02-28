@@ -4,8 +4,6 @@ import { CarouselItem } from "./CarouselItem";
 import "./carousel.css";
 
 import house1 from "../../assets/images/houses/building (1).jpg";
-import house2 from "../../assets/images/houses/building (2).jpg";
-import house3 from "../../assets/images/houses/building (3).jpg";
 
 export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -66,6 +64,7 @@ export const Carousel = () => {
         </button>
         <div className="indicators">
           {items.map((item, index) => {
+            console.log(item);
             return (
               <button
                 className="indicator-buttons"

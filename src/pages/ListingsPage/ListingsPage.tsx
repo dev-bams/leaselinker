@@ -41,10 +41,14 @@ function ListingsPage() {
       <GetStartedNavBar />
       <div className="flex gap-4 border border-green-800 h-full grow flex-col">
         {listings.map(
-          ({ imageSrc, price, noOfBedrooms, noOfBathrooms, amenities }) => {
+          (
+            { imageSrc, price, noOfBedrooms, noOfBathrooms, amenities },
+            index
+          ) => {
             return (
               <Listing
-              // location={}
+                key={index}
+                // location={}
                 imageSrc={imageSrc}
                 price={price}
                 noOfBedrooms={noOfBedrooms}
